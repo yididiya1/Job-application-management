@@ -10,4 +10,5 @@ export const ResumePatchSchema = z.object({
   notes: z.array(z.string()).default([]),
 });
 
+// added comment
 export type ResumePatch = z.infer<typeof ResumePatchSchema>;
