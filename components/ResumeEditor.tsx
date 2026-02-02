@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import MonacoLatexEditor from "@/components/MonacoLatexEditor";
-import ResumePreview from "@/components/ResumePreview";
+import ResumePDFPreview from "@/components/ResumePDFPreview";
 import { sampleLatex } from "@/lib/sampleLatex";
 import { applyPatch } from "@/lib/applyPatch";
 import { ResumePatchSchema, type ResumePatch } from "@/lib/schema";
@@ -207,7 +207,7 @@ export default function ResumeEditor() {
 
           <div className="h-[75vh]">
             {tab === "preview" ? (
-              <ResumePreview latexSource={latexSource} />
+              <ResumePDFPreview latexSource={latexSource} />
             ) : (
               <MonacoLatexEditor value={latexSource} onChange={setLatexSource} />
             )}

@@ -1,4 +1,6 @@
 import "./globals.css";
+import "react-mde/lib/styles/css/react-mde-all.css";
+import "@toast-ui/editor/dist/toastui-editor.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 
